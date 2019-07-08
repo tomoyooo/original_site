@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>偉人別</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+</head>
+
+<body>
+
+    <header>
+      <div class="header-container">
+        <li class="header-tab">
+          <a href="index.html" class="animsition-link">トップ</a>
+        </li>
+        <li class="header-tab">
+          <a href="emotion.html" class="animsition-link">マインド別</a>
+        </li>
+        <li class="header-tab current">
+          <a href="historicalPerson.html" class="animsition-link">偉人別</a>
+        </li>
+      </div>
+    </header>
+
+  <div class="animsition">
+  <div class="container">
+      <div class="card-container">
+
+          <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Einstein
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">どうして自分を責めるんですか？<br><br>他人がちゃんと必要な時に責めてくれるんだからいいじゃないですか。<br>by アインシュタイン</div>
+                <img class="card-back" src="img/einstein.jpg" alt="">
+              </div>
+              <!-- <a href="" id="btn">ここをクリック</a> -->
+              <div class="btn">ここをクリック</div>
+            </div>
+        
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Shakespeare
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">物事に良いも悪いもない。<br>考え方によって良くも悪くもなる。<br><br>by シェイクスピア</div>
+                <img class="card-back" src="img/shakespeare.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+            
+        
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Chaplin
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">何のために意味なんか求めるんだ？<br>人生は願望だ、意味じゃない。<br><br>by チャップリン</div>
+                <img class="card-back" src="img/chaplin.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Yukichi
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">他人の迷惑にならない「欲望」は、すべて善である。<br><br>by 福沢諭吉</div>
+                <img class="card-back" src="img/fukuzawa.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Ko-shi
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">止まりさえしなければ、どんなにゆっくりでも進めばよい。<br><br>by 孔子</div>
+                <img class="card-back" src="img/ko-shi.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Shaka
+                </div>
+                <div class="card">
+                  <div class="card-front"></div>
+                  <div class="card-text">他の作と不作を見るなかれ。己の作と不作のみを見よ。</div>
+                  <img class="card-back" src="img/shaka.jpg" alt="">
+                </div>
+                <div class="btn">ここをクリック</div>
+                </div>
+
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Napoleon
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">人生という試合で最も重要なのは、休憩時間の得点である。<br><br>by ナポレオン</div>
+                <img class="card-back" src="img/napoleon.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+
+            <div id="single-card-container">
+              <div class="balloon3-right-btm">
+                I am Hideyo
+              </div>
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-text">過去を変えることはできないし、変えようとも思わない。なぜなら人生で変えることができるのは、自分と未来だけだからだ。<br>by 野口英世</div>
+                <img class="card-back" src="img/noguchi.jpg" alt="">
+              </div>
+              <div class="btn">ここをクリック</div>
+            </div>
+        
+      </div>
+  </div>
+</div>
+  
+
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Animsition用 js  -->
+<script src="js/animsition.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-lg',
+    outClass: 'zoom-out-lg',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+
+  
+
+</body>
+</html>

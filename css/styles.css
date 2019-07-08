@@ -1,0 +1,391 @@
+* {
+	text-decoration: none;
+}
+
+
+#container {
+	/*高さは使う画像に合わせて設定してください*/
+	height: 600px;
+	width: 100%;
+}
+
+body {
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
+background-color: antiquewhite;
+margin: 0;
+}
+
+header {
+  width:100%;
+  height: 65px;
+  background-color:rgba(34, 49, 52, 0.9);
+  /* position: fixed; */
+  top: 0px;
+  z-index: 10;
+}
+
+.header-container {
+	width: 400px;
+	height: 65px;
+	margin: 0 auto;	
+}
+
+.header-tab{
+width: 120px;
+font-size: 14px;
+float: left;
+display: block;
+margin:0 5px;
+/* background-color: #808080; */
+background-color:rgba(112, 179, 117, 0.9);
+transition: all 0.5s;
+}
+
+.header-tab a {
+  display: block;
+  line-height: 65px;
+  padding: 0 10px;
+	color: white;
+	text-align: center;
+	/* width : calc(100% / 3); */
+}
+
+.header-tab:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.emotion-margin {
+  height: 50px;
+}
+
+.current {
+	border-bottom: 3px solid royalblue;
+ }
+
+/* スライダー用 ==================*/
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.body {
+  width: 100%;
+}
+
+
+.wrapper {
+  /* width: 100%; */
+	margin: 0 ;
+	position:relative;
+}
+
+.wrapper .img {
+  width: 100%x;
+  /* height: 748px; */
+  opacity: 0.7;
+}
+
+.wrapper h1 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+/* スライダー用 終わり====================*/
+
+/* スライダー用テキスト====================*/
+.slider-text-container {
+	position: absolute;
+	top: 200px;
+	right: 25%;
+	z-index: 10;
+}
+
+.slider-text {
+	letter-spacing: 2px;
+	text-align: center;
+	color: white;
+	opacity: 0.9;
+}
+/* スライダー用テキスト 終わり====================*/
+
+/* スライダー内ボタン====================*/
+.nav {
+	width: 500px;
+	margin: 60px auto 0;
+}
+
+.btn-in-slide {
+	font-weight: 700;
+	font-size: 14px;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 20px;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.7;
+  text-decoration: none;
+	border-radius: 7px;
+	background-color: darkblue;
+	text-decoration: none;
+	float: left;
+}
+/* スライダー内ボタン 終わり====================*/
+
+
+.container {
+  width: 1170px;
+  margin: 20px auto;
+}
+
+.card-container {
+  perspective: 600px;
+  width: 900px;
+  height: 700px; 
+	margin: 5px auto;
+	display: flex;
+  flex-wrap: wrap;
+}
+
+#single-card-container {
+	/* width: 170px; */
+	width: 25%;
+	height: 400px;
+}
+
+.balloon3-right-btm {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 15px -30px;
+  padding: 0 5px;
+  width: 140px;
+  height: 100p;
+  line-height: 100px;
+  text-align: center;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  background: #a58eff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.balloon3-right-btm:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 30px solid #a58eff;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.card {
+  cursor: pointer;
+  width: 155px;
+	height: 210px; 
+	margin: 0 auto;
+  transition: 0.8s;  /*カードを回転させる時間*/
+  position: relative;
+  transform-style: preserve-3d;  /*子要素を同じ3D空間に配置してくれる*/
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+	/* background: white; */
+	background:rgba(70, 74, 78, 0.7);
+  text-align: center;
+  line-height: 140px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.card.open {
+  transform: rotateY(180deg);
+}
+
+/* .open {
+  transform: rotateY(180deg);
+} */
+
+
+ .card-text {
+	 color: white;
+	font-size: 13px;
+  padding: 15px;
+  line-height: 23px;
+	backface-visibility: hidden;	
+	transform: rotateY(180deg);
+}
+
+  .when {
+   width: 210px;
+   height: 55px;
+	 margin: 0 auto;
+  }
+
+ .text-when {
+  padding: 7px 3px;
+	 background-color: deepskyblue;
+	 color: white;
+	 border-radius: 3px;
+	font-size: 14px;
+  text-align: center;
+
+}
+
+/* ボタンここから ==================*/
+.btn {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	width: 120px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	transform-style: flat;
+	transition: all 250ms ease-out;
+
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+	border-color: #dedede;
+
+
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+  border-color: #dedede;
+ }
+
+.btn:before, .btn:after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+	transition: all 250ms ease-out;
+}
+
+.btn:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:hover {
+  border: 1px solid #fff;
+}
+
+.btn:hover:before {
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+}
+
+
+/* 元データ */
+/* .btn {
+	position: relative;
+	display: block;
+	width: 250px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transform-style: flat;
+	transition: all 250ms ease-out;
+}
+
+.paper {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+	border-color: #dedede;
+}
+
+
+.paper-raise:before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.btn:before, .btn:after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+	transition: all 250ms ease-out;
+}
+
+
+.paper {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+  border-color: #dedede;
+}
+
+.paper-raise:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.paper-raise:hover {
+  border: 1px solid #fff;
+}
+.paper-raise:hover:before {
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+}
+ */
+
+
+/* ボタンここまで  ==================*/
+
+
+

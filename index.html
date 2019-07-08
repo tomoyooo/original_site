@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <title>偉人館</title>
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <!-- <link rel="stylesheet" href="css/stylesTop.css"> -->
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<div class="animsition">
+
+  <div class="wrapper">
+      <ul class="rslides">
+        <li><img class="img" src="img2/buddha-giant-tian-tan-1173975_1280.jpg" alt=""></li>
+        <li><img class="img" src="img2/bustos-756620_1280.jpg" alt=""></li>
+        <li><img class="img" src="img2/head-3001159_1280.jpg" alt=""></li>
+        <li><img class="img" src="img2/statue-756624_1280.jpg" alt=""></li>      
+  </div>
+
+  <div class="slider-text-container">
+
+    <div class="slider-text">
+      <h1>悩めるあなたへ</h1>
+      <h1>偉人のことばに励まされよう</h1>
+    </div>
+
+    <div class="nav">
+      <a href="emotion.html" class="btn-in-slide animsition-link">今のマインドから探す</a>
+      <a href="historicalPerson.html" class="btn-in-slide animsition-link">偉人から選ぶ</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- スライダー用js -->
+<script src="js/responsiveslides.js"></script>
+<script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+        speed: 1000,   //  切り替わるスピード 
+        timeout: 1500, 
+      });
+    });
+  </script>
+<!-- スライダー用js -->
+
+<!-- Animsition用 js  -->
+<script src="js/animsition.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-down-lg',
+    outClass: 'fade-out-down-lg',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>
