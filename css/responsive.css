@@ -1,0 +1,19 @@
+@media (max-width: 670px) {
+
+.rslides {
+  display: none;
+}
+
+.rslides-sp {
+  display: block;
+}
+
+
+.slider-text-container {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+
+}

@@ -2,40 +2,49 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>偉人館</title>
   <link rel="stylesheet" href="css/animsition.min.css">
-  <!-- <link rel="stylesheet" href="css/stylesTop.css"> -->
   <link rel="stylesheet" href="css/responsiveslides.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
 
 <div class="animsition">
-
   <div class="wrapper">
-      <ul class="rslides">
-        <li><img class="img" src="img2/buddha-giant-tian-tan-1173975_1280.jpg" alt=""></li>
-        <li><img class="img" src="img2/bustos-756620_1280.jpg" alt=""></li>
-        <li><img class="img" src="img2/head-3001159_1280.jpg" alt=""></li>
-        <li><img class="img" src="img2/statue-756624_1280.jpg" alt=""></li>      
+
+    <ul class="rslides">
+      <li><img class="img" src="img2/buddha-giant-tian-tan-1173975_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2/bustos-756620_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2/head-3001159_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2/statue-756624_1280.jpg" alt=""></li>      
+    </ul>
+
+    <ul class="rslides rslides-sp">
+      <li><img class="img" src="img2_sp/buddha-giant-tian-tan-1173975_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2_sp/bustos-756620_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2_sp/head-3001159_1280.jpg" alt=""></li>
+      <li><img class="img" src="img2_sp/statue-756624_1280.jpg" alt=""></li>
+    </ul>
+
+
+      <div class="slider-text-container">
+        <div class="slider-text">
+          <h1>悩めるあなたへ</h1>
+          <h1>偉人のことばに励まされよう</h1>
+        </div>
+
+        <div class="nav">
+          <a href="emotion.html" class="btn-in-slide animsition-link">今のマインドから探す</a>
+          <a href="historicalPerson.html" class="btn-in-slide animsition-link">偉人から選ぶ</a>
+        </div>
+
   </div>
 
-  <div class="slider-text-container">
-
-    <div class="slider-text">
-      <h1>悩めるあなたへ</h1>
-      <h1>偉人のことばに励まされよう</h1>
-    </div>
-
-    <div class="nav">
-      <a href="emotion.html" class="btn-in-slide animsition-link">今のマインドから探す</a>
-      <a href="historicalPerson.html" class="btn-in-slide animsition-link">偉人から選ぶ</a>
-    </div>
-
   </div>
-
 </div>
 
 
@@ -46,12 +55,11 @@
 <script>
     $(function() {
       $(".rslides").responsiveSlides({
-        speed: 1000,   //  切り替わるスピード 
+        speed: 1000, 
         timeout: 1500, 
       });
     });
   </script>
-<!-- スライダー用js -->
 
 <!-- Animsition用 js  -->
 <script src="js/animsition.min.js"></script>
@@ -83,9 +91,6 @@
 
 </script>
 
-
-
-
-
 </body>
 </html>
+

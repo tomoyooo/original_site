@@ -1,5 +1,11 @@
 * {
-	text-decoration: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size:62.5%; 
 }
 
 
@@ -64,25 +70,21 @@ transition: all 0.5s;
  }
 
 /* スライダー用 ==================*/
-/* * {
-  margin: 0;
-  padding: 0;
-} */
 
 .body {
   width: 100%;
 }
 
-
 .wrapper {
-  /* width: 100%; */
+  width: 100%;
+  height: 100vh;
 	margin: 0 ;
 	position:relative;
 }
 
-.wrapper .img {
-  width: 100%x;
-  /* height: 748px; */
+.wrapper li img {
+  width: 100%;
+  height: 100vh;
   opacity: 0.7;
 }
 
@@ -90,6 +92,12 @@ transition: all 0.5s;
   text-align: center;
   padding: 15px 0;
 }
+
+
+.rslides-sp {
+  display: none;
+}
+
 
 .rslides {
   position: relative;
@@ -122,13 +130,15 @@ transition: all 0.5s;
   width: 100%;
   border: 0;
   }
-/* スライダー用 終わり====================*/
+
 
 /* スライダー用テキスト====================*/
+
 .slider-text-container {
-	position: absolute;
-	top: 200px;
-	right: 25%;
+  position: absolute;
+  top: 30%;
+	left: 35%;
+  width: 500px;
 	z-index: 10;
 }
 
@@ -138,7 +148,6 @@ transition: all 0.5s;
 	color: white;
 	opacity: 0.9;
 }
-/* スライダー用テキスト 終わり====================*/
 
 /* スライダー内ボタン====================*/
 .nav {
