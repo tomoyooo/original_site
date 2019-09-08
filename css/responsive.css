@@ -10,10 +10,27 @@
 
 
 .slider-text-container {
+  width: 300px;
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 10%;
 }
 
+.slider-text {
+  font-size: 1.5rem;
+}
+
+.br {
+  display: block;
+}
+
+.nav {
+	width: 250px;
+	margin: 60px auto 0;
+}
+
+.btn-in-slide {
+  margin: 20px;
+}
 
 }

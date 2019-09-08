@@ -38,7 +38,7 @@ header {
 
 .header-tab{
 width: 120px;
-font-size: 14px;
+font-size: 1.4rem;
 float: left;
 display: block;
 margin:0 5px;
@@ -132,7 +132,7 @@ transition: all 0.5s;
   }
 
 
-/* スライダー用テキスト====================*/
+/* スライダーテキスト====================*/
 
 .slider-text-container {
   position: absolute;
@@ -143,21 +143,25 @@ transition: all 0.5s;
 }
 
 .slider-text {
-	letter-spacing: 2px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
 	text-align: center;
 	color: white;
 	opacity: 0.9;
 }
 
+.br {
+  display: none;
+}
+
 /* スライダー内ボタン====================*/
 .nav {
 	width: 500px;
-	margin: 60px auto 0;
 }
 
 .btn-in-slide {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 1.4rem;
 	width: 150px;
 	height: 40px;
 	line-height: 40px;
@@ -171,7 +175,6 @@ transition: all 0.5s;
 	border-radius: 7px;
 	background-color: darkblue;
 	text-decoration: none;
-	float: left;
 }
 /* スライダー内ボタン 終わり====================*/
 
@@ -206,7 +209,7 @@ transition: all 0.5s;
   line-height: 100px;
   text-align: center;
   color: #FFF;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: bold;
   background: #a58eff;
   border-radius: 50%;
@@ -266,7 +269,7 @@ transition: all 0.5s;
 
  .card-text {
 	 color: white;
-	font-size: 13px;
+	font-size: 1.3rem;
   padding: 15px;
   line-height: 23px;
 	backface-visibility: hidden;	
@@ -284,7 +287,7 @@ transition: all 0.5s;
 	 background-color: deepskyblue;
 	 color: white;
 	 border-radius: 3px;
-	font-size: 14px;
+	font-size: 1.4rem;
   text-align: center;
 
 }
