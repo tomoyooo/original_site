@@ -200,7 +200,8 @@ transition: all 0.5s;
 	/* width: 170px; */
   width: 25%;
   flex: auto;
-	height: 400px;
+  height: 400px;
+  margin-top: 30px;
 }
 
 
@@ -296,8 +297,8 @@ transition: all 0.5s;
 	 border-radius: 3px;
 	font-size: 1.4rem;
   text-align: center;
-
 }
+
 
 /* ボタンここから ==================*/
 .btn {
