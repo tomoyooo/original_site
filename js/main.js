@@ -18,14 +18,14 @@
 (function() {
   'use strict';
 
+  var mytap = window.ontouchstart===null?"touchstart":"click";
   var card = document.getElementsByClassName('card');
   var btn = document.getElementsByClassName('btn');
-  var mytap = window.ontouchstart===null?"touchstart":"click";
 
   for(let i = 0; i < btn.length; i++){
   
     //クリックイベントでアラートを表示する
-    btn[i].addEventListener('mytap', () => {
+    btn[i].addEventListener(mytap, () => {
       card[i].className = 'card open'    
   }, false);
     
