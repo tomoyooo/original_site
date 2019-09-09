@@ -6,11 +6,12 @@
     left: 20%;
   } 
 
-
   #single-card-container {
     width: 50%;
-
   }
+
+
+
 
 
 }
@@ -64,7 +65,9 @@
 
 
 /* カード */
-
+.card-container {
+  perspective: 1200px;
+}
 
 
 #single-card-container {
