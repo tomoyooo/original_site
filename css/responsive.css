@@ -5,11 +5,29 @@
     top: 30%;
     left: 20%;
   } 
+
+
+  #single-card-container {
+    width: 50%;
+
+  }
+
+
 }
 
 
 
 @media (max-width: 670px) {
+  .header-container {
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;	
+    display: flex;
+  }
+
+  .header-tab {
+    width: 33%; 
+  }
 
 .rslides {
   display: none;
@@ -43,5 +61,17 @@
 .btn-in-slide {
   margin: 10px ;
 }
+
+
+/* カード */
+
+
+
+#single-card-container {
+  /* flex-direction: column */
+  width: 100%;
+}
+
+
 
 }
